@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Basket</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar navbar-expand-lg navbar-light bg-light py-3">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="font-family: 'Playfair Display', serif; font-size: 24px;">World Peas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item">
+            <button class="btn btn-outline-success">Basket</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container py-5">
+    <div class="row g-5">
+      <!-- Basket Items Section -->
+      <div class="col-lg-8">
+        <div class="basket-item p-3 rounded shadow-sm d-flex align-items-center justify-content-between mb-4 bg-light">
+          <img src="image/tomato.jpg" class="img-fluid rounded" alt="Heirloom Tomato" style="width: 80px;">
+          <div class="item-details flex-grow-1 ms-3">
+            <h5 class="mb-0" style="font-family: 'Roboto', sans-serif;">Heirloom tomato</h5>
+            <p class="text-success mb-0" style="font-family: 'Roboto', sans-serif;">$5.99 / kg</p>
+          </div>
+          <div class="item-price text-end" style="font-family: 'Roboto', sans-serif;">$5.99</div>
+        </div>
+        <div class="basket-item p-3 rounded shadow-sm d-flex align-items-center justify-content-between mb-4 bg-light">
+          <img src="image/ginger.jpg" class="img-fluid rounded" alt="Organic Ginger" style="width: 80px;">
+          <div class="item-details flex-grow-1 ms-3">
+            <h5 class="mb-0" style="font-family: 'Roboto', sans-serif;">Organic ginger</h5>
+            <p class="text-success mb-0" style="font-family: 'Roboto', sans-serif;">$12.99 / kg</p>
+          </div>
+          <div class="item-price text-end" style="font-family: 'Roboto', sans-serif;">$6.50</div>
+        </div>
+        <div class="basket-item p-3 rounded shadow-sm d-flex align-items-center justify-content-between mb-4 bg-light">
+          <img src="image/onion.jpg" class="img-fluid rounded" alt="Sweet Onion" style="width: 80px;">
+          <div class="item-details flex-grow-1 ms-3">
+            <h5 class="mb-0" style="font-family: 'Roboto', sans-serif;">Sweet onion</h5>
+            <p class="text-success mb-0" style="font-family: 'Roboto', sans-serif;">$2.99 / kg</p>
+          </div>
+          <div class="item-price text-end" style="font-family: 'Roboto', sans-serif;">$14.95</div>
+        </div>
+      </div>
+
+      <!-- Order Summary Section -->
+      <div class="col-lg-4">
+        <div class="card p-4 shadow-sm">
+          <h4 class="mb-4" style="font-family: 'Playfair Display', serif;">Order summary</h4>
+          <div class="d-flex justify-content-between mb-2">
+            <span style="font-family: 'Roboto', sans-serif;">Subtotal</span>
+            <span style="font-family: 'Roboto', sans-serif;">$27.44</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <span style="font-family: 'Roboto', sans-serif;">Shipping</span>
+            <span style="font-family: 'Roboto', sans-serif;">$3.99</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <span style="font-family: 'Roboto', sans-serif;">Tax</span>
+            <span style="font-family: 'Roboto', sans-serif;">$2.00</span>
+          </div>
+          <div class="d-flex justify-content-between fw-bold mb-4">
+            <span style="font-family: 'Roboto', sans-serif;">Total</span>
+            <span style="font-family: 'Roboto', sans-serif;">$33.43</span>
+          </div>
+          <button class="btn btn-success w-100">Continue to payment →</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
